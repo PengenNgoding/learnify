@@ -1,0 +1,141 @@
+a:hover {
+	text-decoration: none;
+}
+
+.sidebar-brand-icon {
+	color: rgba(255, 255, 255, .9);
+}
+
+.sidebar-logo {
+    height: 40px;      /* ubah 32–48px sesuai selera */
+    width: auto;
+    display: block;
+}
+
+/* Optional: rapihin container icon biar center */
+.sidebar-brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-brand-text {
+	font-family: 'Lobster';
+	letter-spacing: .5px;
+	text-transform: none;
+	font-size: 20px;
+	color: rgba(255, 255, 255, .9);
+}
+
+/* Extra small devices (small resolution phone, <576px) The navbar toggle appears at this breakpoint */
+.card-columns {column-count: 1;}
+
+/* Small devices (mobile phone, 576 and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 576px) {
+  .card-columns {column-count: 2;}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+	.card-columns {column-count: 3;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.card-columns {column-count: 3;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.card-columns {column-count: 4;}
+}
+
+.video-max-height {
+	max-height: 480px
+}
+:root {
+  --primary: #1CC88A;       /* hijau utama */
+  --primary-dark: #149d6b;  /* versi lebih gelap buat gradient & hover */
+}
+
+/* Ganti background gradient biru jadi hijau */
+.bg-gradient-primary {
+  background-color: var(--primary);
+  background-image: linear-gradient(
+    180deg,
+    var(--primary) 10%,
+    var(--primary-dark) 100%
+  );
+  background-size: cover;
+}
+
+/* Biar tombol primary juga ikut hijau */
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+.notif-badge{
+  position:absolute;
+  top:8px;
+  right:6px;
+  min-width:18px;
+  height:18px;
+  padding:0 5px;
+  border-radius:999px;
+  background:#e74a3b;
+  color:#fff;
+  font-size:11px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1;
+}
+
+
+/* Text & border yang primary juga ikut hijau */
+.text-primary {
+  color: var(--primary) !important;
+}
+.rocket-btn{
+    width: 54px;
+    height: 54px;
+    border-radius: 999px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* biar image ke-crop bulat */
+}
+
+.lang-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* buat list item di dropdown */
+.lang-flag{
+    width: 22px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.border-left-primary {
+  border-left: 0.25rem solid var(--primary) !important;
+}
+
+.border-bottom-primary {
+  border-bottom: 0.25rem solid var(--primary) !important;
+}
+
