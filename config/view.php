@@ -27,10 +27,7 @@ return [
     | directory. However, as usual, you are free to change this value.
     |
     */
+'compiled' => env('VIEW_COMPILED_PATH', storage_path('framework/views')),
 
-    'compiled' => env(
-        'VIEW_COMPILED_PATH',
-        realpath(storage_path('framework/views'))
-    ),
 
 ];
